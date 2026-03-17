@@ -1,27 +1,29 @@
 /**
- * HelloApp - Use Cases 1-3: Display greetings in the console
+ * HelloApp - Use Cases 1-4: Display greetings in the console
  * 
  * This application demonstrates:
  * - UC1: Printing a basic greeting "Hello World"
  * - UC2: Accepting a name as command-line argument and displaying a personalized greeting
  * - UC3: Handling optional argument with default value using ternary operator
+ * - UC4: Processing multiple command-line arguments and greeting all names
  * 
  * @author Riddhim
- * @version 3.0.0
+ * @version 4.0.0
  */
 public class HelloApp {
     
     /**
      * Main method - entry point of the application
-     * Handles UC1-UC3: From basic greeting to optional argument with default value
+     * Handles UC1-UC4: From basic greeting to multiple name processing
      * 
-     * @param args command-line arguments (optional single name for personalized greeting)
+     * @param args command-line arguments (optional multiple names for personalized greetings)
      */
     public static void main(String[] args) {
-        // UC3: Accept optional command-line argument with default value using ternary operator
+        // UC4: Accept multiple command-line arguments and display personalized greeting for all
         // If no arguments provided, defaults to "World"
+        // Uses String.join() to combine all names with comma-space separator
         
-        String name = (args.length > 0) ? args[0] : "World";
-        System.out.println("Hello, " + name + "!");
+        String names = (args.length > 0) ? String.join(", ", args) : "World";
+        System.out.println("Hello, " + names + "!");
     }
 }
