@@ -1,5 +1,7 @@
 # HelloApp Use Case Documentation
 
+**Author:** Riddhim
+
 ## Use Case 1: Print a Basic Greeting in the Console
 
 ### Description
