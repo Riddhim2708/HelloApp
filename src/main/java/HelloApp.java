@@ -4,7 +4,7 @@
  * This is the starting point of the HelloApp journey. It demonstrates
  * the fundamental concept of console output in Java.
  * 
- * @author HelloApp Developer
+ * @author Riddhim
  * @version 1.0.0
  */
 public class HelloApp {
