@@ -5,7 +5,7 @@
  * - UC1: Printing a basic greeting "Hello World"
  * - UC2: Accepting a name as command-line argument and displaying a personalized greeting
  * 
- * @author HelloApp Developer
+ * @author Riddhim
  * @version 2.0.0
  */
 public class HelloApp {
