@@ -1,0 +1,16 @@
+# VS Code
+.vscode/
+# Compiled
+*.class
+*.jar
+*.log
+# Exclusions
+.DS_Store
+*.iml
+.idea/
+target/
+bin/
+doc/
+out/
+build/
+dist/
