@@ -1,18 +1,15 @@
 /**
- * HelloApp - Use Case 2: Display Hello with Command-Line Argument
+ * HelloApp - Use Case 3: Display Hello with Ternary Operator
  * 
- * This use case builds on UC1 by accepting a name as a command-line argument.
- * If a name is provided, it prints "Hello, <name>!", otherwise it defaults to "Hello, World!"
+ * This use case refactors UC2 to use a ternary operator for cleaner code.
+ * It demonstrates a more concise way to handle the conditional logic.
  * 
  * @author Riddhim
- * @version 2.0.0
+ * @version 3.0.0
  */
 public class HelloApp {
     public static void main(String[] args) {
-        if (args.length > 0) {
-            System.out.println("Hello, " + args[0] + "!");
-        } else {
-            System.out.println("Hello, World!");
-        }
+        String name = (args.length > 0) ? args[0] : "World";
+        System.out.println("Hello, " + name + "!");
     }
 }
