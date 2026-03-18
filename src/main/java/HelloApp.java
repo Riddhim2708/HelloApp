@@ -1,14 +1,18 @@
 /**
- * HelloApp - Use Case 1: Print a basic greeting in the console
+ * HelloApp - Use Case 2: Display Hello with Command-Line Argument
  * 
- * This is the starting point of the HelloApp journey. It demonstrates
- * the fundamental concept of console output in Java.
+ * This use case builds on UC1 by accepting a name as a command-line argument.
+ * If a name is provided, it prints "Hello, <name>!", otherwise it defaults to "Hello, World!"
  * 
  * @author Riddhim
- * @version 1.0.0
+ * @version 2.0.0
  */
 public class HelloApp {
     public static void main(String[] args) {
-        System.out.println("Hello World");
+        if (args.length > 0) {
+            System.out.println("Hello, " + args[0] + "!");
+        } else {
+            System.out.println("Hello, World!");
+        }
     }
 }
