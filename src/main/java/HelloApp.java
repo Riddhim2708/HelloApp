@@ -1,15 +1,15 @@
 /**
- * HelloApp - Use Case 3: Display Hello with Ternary Operator
+ * HelloApp - Use Case 4: Display Hello with Multiple Command-Line Arguments
  * 
- * This use case refactors UC2 to use a ternary operator for cleaner code.
- * It demonstrates a more concise way to handle the conditional logic.
+ * This use case extends UC3 to handle multiple names provided as command-line arguments.
+ * It uses String.join() to combine multiple names with commas.
  * 
  * @author Riddhim
- * @version 3.0.0
+ * @version 4.0.0
  */
 public class HelloApp {
     public static void main(String[] args) {
-        String name = (args.length > 0) ? args[0] : "World";
-        System.out.println("Hello, " + name + "!");
+        String names = (args.length > 0) ? String.join(", ", args) : "World";
+        System.out.println("Hello, " + names + "!");
     }
 }
