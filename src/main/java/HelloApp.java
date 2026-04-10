@@ -1,27 +1,15 @@
 /**
- * HelloApp - Use Case 6: Display Hello with Multiple Command-Line Arguments using substring() to Remove Trailing Delimiter
+ * HelloApp - Use Case 7: Display Hello with Multiple Command-Line Arguments using String.join() Method
  * 
- * This use case demonstrates the use of the substring() method to remove the trailing delimiter
- * after constructing the string with an enhanced for loop. This is a cleaner approach than
- * using conditional logic inside the loop.
+ * This use case demonstrates the use of the String.join() static method to efficiently concatenate
+ * multiple names with a specified delimiter. This is the most concise and elegant approach.
  * 
  * @author Riddhim
- * @version 6.0.0
+ * @version 7.0.0
  */
 public class HelloApp {
     public static void main(String[] args) {
-        if (args.length == 0) {
-            System.out.println("Hello, World!");
-        } else {
-            StringBuilder nameBuilder = new StringBuilder();
-            for (String name : args) {
-                nameBuilder.append(name).append(", ");
-            }
-            // Remove the trailing ", "
-            if (nameBuilder.length() > 0) {
-                nameBuilder.setLength(nameBuilder.length() - 2);
-            }
-            System.out.println("Hello, " + nameBuilder + "!");
-        }
+        String names = (args.length > 0) ? String.join(", ", args) : "World";
+        System.out.println("Hello, " + names + "!");
     }
 }
