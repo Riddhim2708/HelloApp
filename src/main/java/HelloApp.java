@@ -1,15 +1,26 @@
 /**
- * HelloApp - Use Case 4: Display Hello with Multiple Command-Line Arguments
+ * HelloApp - Use Case 5: Display Hello with Multiple Command-Line Arguments using Enhanced For Loop
  * 
- * This use case extends UC3 to handle multiple names provided as command-line arguments.
- * It uses String.join() to combine multiple names with commas.
+ * This use case demonstrates the use of an enhanced for loop (for-each loop) to iterate through
+ * command-line arguments. If no arguments are provided, it displays the default greeting.
+ * Uses conditional logic to avoid trailing commas.
  * 
  * @author Riddhim
- * @version 4.0.0
+ * @version 5.0.0
  */
 public class HelloApp {
     public static void main(String[] args) {
-        String names = (args.length > 0) ? String.join(", ", args) : "World";
-        System.out.println("Hello, " + names + "!");
+        if (args.length == 0) {
+            System.out.println("Hello, World!");
+        } else {
+            StringBuilder nameBuilder = new StringBuilder();
+            for (String name : args) {
+                if (nameBuilder.length() > 0) {
+                    nameBuilder.append(", ");
+                }
+                nameBuilder.append(name);
+            }
+            System.out.println("Hello, " + nameBuilder + "!");
+        }
     }
 }
