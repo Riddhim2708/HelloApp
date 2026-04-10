@@ -1,11 +1,11 @@
 /**
- * HelloApp - Use Case 4: Display Hello with Multiple Command-Line Arguments
+ * HelloApp - Use Case 7: Display Hello with Multiple Command-Line Arguments using String.join() Method
  * 
- * This use case extends UC3 to handle multiple names provided as command-line arguments.
- * It uses String.join() to combine multiple names with commas.
+ * This use case demonstrates the use of the String.join() static method to efficiently concatenate
+ * multiple names with a specified delimiter. This is the most concise and elegant approach.
  * 
  * @author Riddhim
- * @version 4.0.0
+ * @version 7.0.0
  */
 public class HelloApp {
     public static void main(String[] args) {
